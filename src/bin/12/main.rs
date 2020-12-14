@@ -1,4 +1,4 @@
-const INPUT: [u16; 200] = [
+const INPUT: [usize; 200] = [
     1440, 1511, 1731, 1400, 1542, 1571, 1768, 1730, 1959, 1342, 1744, 872, 1237, 1846, 1597, 1583,
     1711, 1499, 1679, 1895, 1875, 1928, 1728, 1673, 481, 1934, 673, 1704, 1916, 1958, 1821, 1649,
     1640, 1802, 1732, 121, 1924, 1438, 1748, 1046, 1905, 1566, 1152, 1964, 1518, 1603, 1414, 1785,
@@ -15,18 +15,12 @@ const INPUT: [u16; 200] = [
 ];
 
 fn main() {
-    for i in 0..200 {
-        for j in i..200 {
-            for k in j..200 {
+    for i in 0..INPUT.len() {
+        for j in i..INPUT.len() {
+            for k in j..INPUT.len() {
                 if INPUT[i] + INPUT[j] + INPUT[k] == 2020 {
-                    println!("{} + {} + {} = 2020", INPUT[i], INPUT[j], INPUT[k]);
-                    println!(
-                        "{} * {} * {} = {}",
-                        INPUT[i],
-                        INPUT[j],
-                        INPUT[k],
-                        INPUT[i] as usize * INPUT[j] as usize * INPUT[k] as usize
-                    );
+                    println!("{}", INPUT[i] * INPUT[j] * INPUT[k]);
+                    return;
                 }
             }
         }
