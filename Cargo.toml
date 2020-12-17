@@ -3,6 +3,7 @@ name = "advent-of-code"
 version = "0.1.0"
 authors = ["Marcelo Lima <marcelowind@gmail.com>"]
 edition = "2018"
+build = "build.rs"
 
 [dependencies]
 regex = "1"
