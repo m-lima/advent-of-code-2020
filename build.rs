@@ -1,5 +1,5 @@
 fn prepare_111() {
-    use std::io::{BufWriter, Write};
+    use std::io::Write;
 
     const OUTPUT: &str = "src/bin/111/input.rs";
     const INPUT: &str = include_str!("src/bin/111/input.txt");
@@ -31,7 +31,7 @@ fn prepare_111() {
 }
 
 fn prepare_112() {
-    use std::io::{BufWriter, Write};
+    use std::io::Write;
 
     const OUTPUT: &str = "src/bin/112/input.rs";
     const INPUT: &str = include_str!("src/bin/112/input.txt");
