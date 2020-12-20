@@ -10,13 +10,8 @@ mod d191 {
     include!("src/bin/191/build.rs");
 }
 
-mod d192 {
-    include!("src/bin/192/build.rs");
-}
-
 fn main() {
     d111::prepare();
     d112::prepare();
     d191::prepare();
-    d192::prepare();
 }
