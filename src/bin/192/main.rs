@@ -3,7 +3,7 @@ use pest::Parser;
 const INPUT: &str = include_str!("input.txt");
 
 #[derive(pest_derive::Parser)]
-#[grammar = "bin/191/rules.peg"]
+#[grammar = "bin/192/rules.peg"]
 struct Validator;
 
 fn main() {
